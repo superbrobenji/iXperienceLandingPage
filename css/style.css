@@ -7,7 +7,7 @@ body{
     margin:0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size:17px;
-    color: #C35817;
+    color: rgb(8, 8, 8);
     Line-height:1.6;
 }
 
@@ -22,6 +22,8 @@ body{
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.349);
+
 }
 
 #showcase h1{
@@ -48,39 +50,42 @@ body{
     color:#fff;
 }
 
-#section-a{
-    
+.orange-block{
+    margin: 10px;
     padding:20px;
     border-radius: 15px;
     background: #C35817;
     color: white;
     text-align: center;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.349);
 }
 
-#section-b{
+.orange-text{
+    margin:10px;
     padding:20px;
     border-radius: 15px;
     background: rgb(219, 214, 210);
     text-align: center;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.349);
 }
 
-#section-c{
+#div-c{
     display: flex;
 }
-
-#section-c div{
+/* 
+#div-c div{
     padding:20px;
 }
 
-#section-c .box-1, #section-c .box-3{
+#div-c .box-1, #div-c .box-3{
     background: #C35817;
     color:#fff;
 }
 
-#section-c .box-2{
+#div-c .box-2{
     background: rgb(230, 220, 220);
 }
 
-#section-c .box-1, #section-c .box-3, #section-c .box-2{
+#div-c .box-1, #div-c .box-3, #div-c .box-2{
     border-radius: 10px;
-}
+} */
