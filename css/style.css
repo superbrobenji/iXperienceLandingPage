@@ -11,6 +11,14 @@ body{
     Line-height:1.6;
 }
 
+.block-3-header{
+    text-align: center;
+}
+
+.block-3-text{
+    text-align: left !important;
+}
+
 .bg-white{
     width: 100%;
     height:100vh;
@@ -38,7 +46,7 @@ body{
     font-size: 20px;
 }
 
-#showcase > .bg-white > .button{
+.button{
     font-size: 18px;
     text-decoration: none;
     color: #C35817;
@@ -48,7 +56,37 @@ body{
     margin-top: 20px;
 }
 
-#showcase > .bg-white > .button:hover{
+#block-4-header{
+    margin-bottom: 20px;
+    Line-height:1;
+}
+
+.flex{
+    display: flex;
+}
+
+.buttonLinkedIn{
+    border: #0077B5 1px solid;
+    padding:5px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.list{
+    margin: 0 30px;
+}
+
+.buttonLinkedIn > a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #0077B5;
+}
+
+.buttonLinkedIn:hover{
+    background-color: #0077B5;
+    color:#fff;
+}
+
+.button:hover{
     background-color: #C35817;
     color:#fff;
 }
