@@ -11,31 +11,34 @@ body{
     Line-height:1.6;
 }
 
-#showcase{
-    background-image:url('../img/LandingPage.jpg');
-    background-size: cover;
-    background-position: center;
+.bg-white{
+    width: 100%;
     height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
-    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.349);
-
+    background-color: rgba(255, 255, 255, 0.301);
 }
 
-#showcase h1{
+#showcase{
+    background-image:url('../img/LandingPage.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.349);
+}
+
+#showcase > .bg-white > h1{
     font-size: 50px;
     line-height: 1.2;
 }
 
-#showcase p{
+#showcase > .bg-white > p{
     font-size: 20px;
 }
 
-#showcase .button{
+#showcase > .bg-white > .button{
     font-size: 18px;
     text-decoration: none;
     color: #C35817;
@@ -45,7 +48,7 @@ body{
     margin-top: 20px;
 }
 
-#showcase .button:hover{
+#showcase > .bg-white > .button:hover{
     background-color: #C35817;
     color:#fff;
 }
@@ -72,20 +75,3 @@ body{
 #div-c{
     display: flex;
 }
-/* 
-#div-c div{
-    padding:20px;
-}
-
-#div-c .box-1, #div-c .box-3{
-    background: #C35817;
-    color:#fff;
-}
-
-#div-c .box-2{
-    background: rgb(230, 220, 220);
-}
-
-#div-c .box-1, #div-c .box-3, #div-c .box-2{
-    border-radius: 10px;
-} */
