@@ -1,15 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="../css/quizStyle.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/quizStyle.css" />
+  </head>
+  <body>
     <div class="container">
-        
+      <header>
+        <div class="pull-left">
+          Personal Quiz
+        </div>
+        <div class="pull-right">
+          Benjamin Swanepoel
+        </div>
+      </header>
+      <main>
+        <form class="questionForm" id="q1" data-question="1">
+          <h3>1. How old is Benjamin?</h3>
+          <ul>
+            <li><input type="radio" name="q1" value="a" />19</li>
+            <li><input type="radio" name="q1" value="b" />20</li>
+            <li><input type="radio" name="q1" value="c" />21</li>
+            <li><input type="radio" name="q1" value="d" />22</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+
+        <form class="questionForm" id="q2" data-question="2">
+          <h3>
+            2. For which years of Highschool did Benjamin work as a student
+            admin?
+          </h3>
+          <ul>
+            <li><input type="radio" name="q2" value="a" />first 2 years</li>
+            <li><input type="radio" name="q2" value="b" />last 3 years</li>
+            <li><input type="radio" name="q2" value="c" />last 2 years</li>
+            <li><input type="radio" name="q2" value="d" />last year</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+
+        <form class="questionForm" id="q3" data-question="3">
+          <h3>3. How did Benjamin fund his personal pc?</h3>
+          <ul>
+            <li>
+              <input type="radio" name="q3" value="a" />Parents funded it.
+            </li>
+            <li><input type="radio" name="q3" value="b" />Stole money.</li>
+            <li>
+              <input type="radio" name="q3" value="c" />Sold old computer
+              components.
+            </li>
+            <li>
+              <input type="radio" name="q3" value="d" />sold Candy at school.
+            </li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+
+        <form class="questionForm" id="q4" data-question="4">
+          <h3>4. what type of colour blind is Benjamin?</h3>
+          <ul>
+            <li><input type="radio" name="q4" value="a" />Red-Green</li>
+            <li><input type="radio" name="q4" value="b" />Blue-Yellow</li>
+            <li>
+              <input type="radio" name="q4" value="c" />Complete Colour
+              blindness
+            </li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+        <div id="results"></div>
+      </main>
+      <footer><div class="pull-left">Total: 5 Questions</div></footer>
     </div>
-</body>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../js/quiz.js"></script>
+  </body>
 </html>
