@@ -13,11 +13,17 @@
         <div class="pull-left">
           Personal Quiz
         </div>
-        <div class="pull-right">
-          Benjamin Swanepoel
-        </div>
+        <div class="pull-right" id="subject-name"></div>
       </header>
       <main>
+          <form class="Name" id="name-entry" data-question="0">
+              <h3>What is your name?</h3>
+              <ul>
+                <li><input type="text" name="fname" id="nameEntry"/></li>
+              </ul>
+              <button id="submit">Submit</button>
+            </form>
+
         <form class="questionForm" id="q1" data-question="1">
           <h3>1. How old is Benjamin?</h3>
           <ul>
@@ -31,7 +37,7 @@
 
         <form class="questionForm" id="q2" data-question="2">
           <h3>
-            2. For which years of Highschool did Benjamin work as a student
+            2. For which years of Highschool did Benjamin work as a student ICT
             admin?
           </h3>
           <ul>
@@ -73,11 +79,31 @@
           </ul>
           <button id="submit">Submit</button>
         </form>
+        <form class="questionForm" id="q5" data-question="5">
+          <h3>5. How many websites has Benjamin built including this one?</h3>
+          <ul>
+            <li><input type="radio" name="q5" value="a" />5</li>
+            <li><input type="radio" name="q5" value="b" />&gt;10</li>
+            <li><input type="radio" name="q5" value="c" />1</li>
+            <li><input type="radio" name="q5" value="d" />7</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+        <form class="questionForm" id="q6" data-question="6">
+          <h3>6. Which of the following are skills of Benjamin?</h3>
+          <ul>
+            <li><input type="checkbox" name="q6" value="a" />python</li>
+            <li><input type="checkbox" name="q6" value="b" />Angular</li>
+            <li><input type="checkbox" name="q6" value="c" />German</li>
+            <li><input type="checkbox" name="q6" value="d" />Sailing</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
         <div id="results"></div>
       </main>
-      <footer><div class="pull-left">Total: 5 Questions</div></footer>
+      <footer><div class="pull-left">Total: 6 Questions</div></footer>
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../js/jquery.js"></script>
     <script src="../js/quiz.js"></script>
   </body>
 </html>
