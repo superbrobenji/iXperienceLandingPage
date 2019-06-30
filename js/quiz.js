@@ -53,7 +53,7 @@ function process(n) {
         score +
         " out of " +
         highest +
-        "!</h3><a href=../img/quiz.html>Take Quiz Again</a>"
+        "!</h3><a href=./quiz.html>Take Quiz Again</a>"
     );
   }
   return false;
